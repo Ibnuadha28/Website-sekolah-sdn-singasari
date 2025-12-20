@@ -102,9 +102,13 @@
     max-width: 300px;
   }
 
-  .guru-img {
-    width: 100px;
-    height: 100px;
+  .guru-img { 
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    display: block;
   }
 
    .facility-card {
