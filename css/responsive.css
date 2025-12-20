@@ -1,0 +1,241 @@
+/* Responsive Styles */
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .carousel-caption {
+        padding: 3rem;
+    }
+    
+    .carousel-caption h1 {
+        font-size: 4rem;
+    }
+}
+
+/* Medium devices (tablets, 768px to 991px) */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        margin-top: 1rem;
+    }
+    
+    .carousel-item {
+        height: 500px;
+    }
+    
+    .carousel-caption h1 {
+        font-size: 2.5rem;
+    }
+    
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+    
+    .facility-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .cta-section .row {
+        flex-direction: column;
+    }
+    
+    .cta-image {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Small devices (landscape phones, 576px to 767px) */
+@media (max-width: 767.98px) {
+    .navbar-brand img {
+        width: 50px;
+        margin-right: 0.5rem;
+    }
+    
+    .navbar-brand h2 {
+        font-size: 1.25rem;
+    }
+    
+    .carousel-item {
+        height: 400px;
+    }
+    
+    .carousel-caption {
+        padding: 1.5rem;
+        top: 45%;
+    }
+    
+    .carousel-caption h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .carousel-caption h5 {
+        font-size: 1rem;
+    }
+    
+    .carousel-caption p {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .carousel-caption .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .display-6 {
+        font-size: 2rem;
+    }
+    
+    section {
+        padding: 3rem 0 !important;
+    }
+    
+    .contact-item {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .navbar {
+        padding: 0.5rem 0;
+    }
+    
+    .carousel-item {
+        height: 300px;
+    }
+    
+    .carousel-caption {
+        padding: 1rem;
+        top: 40%;
+    }
+    
+    .carousel-caption h1 {
+        font-size: 1.5rem;
+    }
+    
+    .carousel-caption h5 {
+        font-size: 0.875rem;
+    }
+    
+    .carousel-caption p {
+        font-size: 0.8rem;
+        display: none;
+    }
+    
+    .carousel-caption .btn {
+        padding: 0.375rem 0.75rem;
+        font-size: 0.8rem;
+    }
+    
+    .facility-card {
+        padding: 1.5rem !important;
+    }
+    
+    .facility-icon img {
+        width: 50px;
+    }
+    
+    .why-section h1 {
+        font-size: 1.75rem;
+    }
+    
+    .cta-section h1 {
+        font-size: 1.75rem;
+    }
+    
+    .faq-section h1 {
+        font-size: 1.75rem;
+    }
+    
+    .contact-section h1 {
+        font-size: 1.75rem;
+    }
+    
+    .footer {
+        text-align: center;
+    }
+    
+    .footer .row > div {
+        margin-bottom: 2rem;
+    }
+    
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 0.875rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .carousel-caption .btn,
+    .cta-section .btn,
+    .contact-form,
+    .footer,
+    .back-to-top {
+        display: none !important;
+    }
+    
+    body {
+        font-size: 12pt;
+        color: #000;
+    }
+    
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    section {
+        page-break-inside: avoid;
+        margin-bottom: 2rem;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    :root {
+        --primary-color: #0000ff;
+        --secondary-color: #ff4500;
+    }
+    
+    body {
+        background: #000;
+        color: #fff;
+    }
+    
+    .navbar,
+    .facility-card,
+    .contact-item,
+    .contact-form {
+        background: #000;
+        border: 2px solid #fff;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .carousel-item {
+        transition: none;
+    }
+    
+    .facility-card:hover,
+    .contact-item:hover,
+    .back-to-top:hover {
+        transform: none;
+    }
+}
