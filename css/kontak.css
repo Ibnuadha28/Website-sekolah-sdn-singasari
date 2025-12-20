@@ -407,7 +407,7 @@
     font-size: 0.95rem;
 }
 
-/* FAQ Quick Links */
+/* FAQ Quick Links
 .faq-quicklinks {
     padding: 5rem 0;
     background-color: #fff;
@@ -453,7 +453,7 @@
 .faq-card a:hover {
     text-decoration: underline;
 }
-
+*/
 /* CTA Contact */
 .cta-contact {
     padding: 4rem 0;
@@ -482,7 +482,7 @@
     box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
 }
 
-/* WhatsApp Floating Button */
+/* WhatsApp Floating Button
 .whatsapp-float {
     position: fixed;
     bottom: 30px;
@@ -508,7 +508,7 @@
     transform: scale(1.1);
     box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
 }
-
+*/
 /* Character Counter */
 .char-counter {
     font-size: 0.875rem;
@@ -542,6 +542,7 @@
     }
 }
 
+/*
 @media (max-width: 767.98px) {
     .contact-header h1 {
         font-size: 2.5rem;
@@ -633,7 +634,7 @@
         width: 100%;
         margin-top: 1rem;
     }
-}
+} */
 
 /* Animation for scroll */
 @keyframes fadeInUp {
